@@ -2,7 +2,7 @@ $("#registro").submit(function (e) {
     e.preventDefault();
     let data = {};
 
-    data.user = $("#user").val();
+    data.username = $("#user").val();
     data.password = $("#password").val();
 
     $.ajax({
@@ -12,7 +12,7 @@ $("#registro").submit(function (e) {
         success: function (response) {
             alert("Registro de datos completado");
             alert("Datos enviados");
-            $("#user").attr('disabled', false);
+            //$("#user").attr('disabled', false);
             $("#password").val("");
         }
     });
